@@ -1,6 +1,5 @@
-# TODO List for Creating Personal Website
+# TODO: Update All Designs to Maroon and Gold Theme
 
-- [x] Create index.html (homepage) with sections: About Me, Photo, Educational History, Contact Person, and links to Skills and Hobbies pages.
-- [x] Create skills.html page with placeholder content for skills.
-- [x] Create hobbies.html page with placeholder content for hobbies.
-- [x] Test the website by opening index.html in a browser.
+- [x] Update index.html with maroon and gold color scheme
+- [x] Update skills.html with maroon and gold color scheme
+- [x] Update hobbies.html with maroon and gold color scheme

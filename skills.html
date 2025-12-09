@@ -10,14 +10,43 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fffacd;
+            background: linear-gradient(135deg, #800000 0%, #4B0000 100%);
             color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
-            background-color: #ffd700;
-            color: #333;
+            background: linear-gradient(135deg, #FFD700 0%, #DAA520 100%);
+            color: #800000;
             text-align: center;
-            padding: 1rem;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255,255,255,0.1);
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         .container {
             max-width: 800px;
@@ -79,5 +108,8 @@
             </ul>
         </section>
     </div>
+    <footer>
+        <p>&copy; 2023 NUR SYAFIKA. All rights reserved.</p>
+    </footer>
 </body>
 </html>
